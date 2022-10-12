@@ -1,0 +1,148 @@
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css_final.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Fixed table</title>
+
+</head>
+  <body>
+  
+    
+    <div class="heading">
+        <h1>Data filter using JavaScript</h1>
+    </div>
+
+    <div class="outer-wrapper">
+        <div class="table-wrapper table-responsive">
+            <table id="emp-table" class="">
+                <thead>
+                    
+                    <th col-index = 1>Brand
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all">All</option>
+                        </select>
+                    </th>
+
+                    <th col-index = 2>Type
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all">All</option>
+                        </select>
+                    </th>
+                    <th col-index = 3>Grader
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all">All</option>
+                        </select>
+                    </th>
+                    <th col-index = 4>Grade
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all">All</option>
+                        </select>
+                    </th>
+                    <th col-index = 5>Serial
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all">All</option>
+                        </select>
+                    </th>
+                    <th col-index = 6>Year
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all">All</option>
+                        </select>
+                    </th>
+                    <th col-index = 7>Color
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all">All</option>
+                        </select>
+                    </th>
+                    <th col-index = 8>Player
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all">All</option>
+                        </select>
+                    </th>
+                
+                    
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Futera</td>
+                        <td>Museum</td>
+                        <td>MGC</td>
+                        <td>10</td>
+                        <td>4/10</td>
+                        <td>2022</td>
+                        <td>Purple</td>
+                        <td>Kevin De Bruyne</td>
+                    </tr>
+                    <tr>
+                        <td>Topps</td>
+                        <td>Pearl</td>
+                        <td>GMA</td>
+                        <td>9</td>
+                        <td>17/25</td>
+                        <td>2020</td>
+                        <td>Purple</td>
+                        <td>Frenkie De Jong</td>
+                    </tr>
+                    <tr>
+                        <td>Topps</td>
+                        <td>Immaculate</td>
+                        <td>PSA</td>
+                        <td>9</td>
+                        <td>9/10</td>
+                        <td>2012</td>
+                        <td>Purple</td>
+                        <td>Ronaldinho</td>
+                    </tr>
+                    <tr>
+                        <td>Panini</td>
+                        <td>Steve Aoki</td>
+                        <td>BGS</td>
+                        <td>8</td>
+                        <td>41/49</td>
+                        <td>2018</td>
+                        <td>Online</td>
+                        <td>Mason Mount</td>
+                    </tr>
+                    <tr>
+                        <td>Futera</td>
+                        <td>Museum</td>
+                        <td>MGC</td>
+                        <td>10</td>
+                        <td>4/10</td>
+                        <td>2022</td>
+                        <td>Purple</td>
+                        <td>Kevin De Bruyne</td>
+                    </tr>
+                    <tr>
+                        <td>Topps</td>
+                        <td>Pearl</td>
+                        <td>GMA</td>
+                        <td>9</td>
+                        <td>17/25</td>
+                        <td>2020</td>
+                        <td>Purple</td>
+                        <td>Frenkie De Jong</td>
+                    </tr>
+                    
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="filter.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
