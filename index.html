@@ -19,57 +19,86 @@
         <h1>Filter using JavaScript</h1>
     </div>
 
-    <div class="outer-wrapper">
+
+    <!-- <div class="selector__container shadow">
+        
+    </div> -->
+
+    <div class="outer-wrapper shadow">
         <div class="table-wrapper table-responsive">
             <table id="emp-table" class="">
-                <thead>
+
+                <thead class="thead">
                     
-                    <th col-index = 1>Brand
+                    <th col-index = 1>
                         <select class="table-filter" onchange="filter_rows()">
-                            <option value="all">All</option>
+                            <option value="all">Brand</option>
                         </select>
                     </th>
 
-                    <th col-index = 2>Type
+                    <th col-index = 2>
                         <select class="table-filter" onchange="filter_rows()">
-                            <option value="all">All</option>
+                            <option value="all">Type</option>
                         </select>
                     </th>
-                    <th col-index = 3>Grader
+                    <th col-index = 3>
                         <select class="table-filter" onchange="filter_rows()">
-                            <option value="all">All</option>
+                            <option value="all">Grader</option>
                         </select>
                     </th>
-                    <th col-index = 4>Grade
+                    <th col-index = 4>
                         <select class="table-filter" onchange="filter_rows()">
-                            <option value="all">All</option>
+                            <option value="all">Grade</option>
                         </select>
                     </th>
-                    <th col-index = 5>Serial
+                    <th col-index = 5>
                         <select class="table-filter" onchange="filter_rows()">
-                            <option value="all">All</option>
+                            <option value="all">Serial</option>
                         </select>
                     </th>
-                    <th col-index = 6>Year
+                    <th col-index = 6>
                         <select class="table-filter" onchange="filter_rows()">
-                            <option value="all">All</option>
+                            <option value="all">Year</option>
                         </select>
                     </th>
-                    <th col-index = 7>Color
+                    <th col-index = 7>
                         <select class="table-filter" onchange="filter_rows()">
-                            <option value="all">All</option>
+                            <option value="all">Color</option>
                         </select>
                     </th>
-                    <th col-index = 8>Player
-                        <select class="table-filter" onchange="filter_rows()">
-                            <option value="all">All</option>
-                        </select>
+                    <th col-index = 8>
+                        <input type="text" id="myInput"  name="myCountry" class="table-filter myCountry" placeholder="write player name">
+                            
                     </th>
                 
                     
                 </thead>
+
+                <thead class="blank__thead">
+                    <th col-index = 1></th>
+                    <th col-index = 2></th>
+                    <th col-index = 3></th>
+                    <th col-index = 4></th>
+                    <th col-index = 5></th>
+                    <th col-index = 6></th>
+                    <th col-index = 7></th>
+                    <th col-index = 8></th>
+                </thead>
+
+                <thead class="thead__only-name">
+                    <th col-index = 1 class="p-3">Brand</th>
+                    <th col-index = 2>Type</th>
+                    <th col-index = 3>Grader</th>
+                    <th col-index = 4>Grade</th>
+                    <th col-index = 5>Serial</th>
+                    <th col-index = 6>Year</th>
+                    <th col-index = 7>Color</th>
+                    <th col-index = 8>Player</th>
+                </thead>
+               
                 <tbody>
                     
+                   
                     <tr>
                         <td>Futera</td>
                         <td>Museum</td>
@@ -78,8 +107,59 @@
                         <td>4/10</td>
                         <td>2022</td>
                         <td>Purple</td>
-                        <td>Kevin De Bruyne</td>
+                        <td class="player">Kevin De Bruyne</td>
                     </tr>
+                    <tr>
+                        <td>Futera</td>
+                        <td>Museum</td>
+                        <td>MGC</td>
+                        <td>10</td>
+                        <td>4/10</td>
+                        <td>2022</td>
+                        <td>Purple</td>
+                        <td class="player">Lionel Messi</td>
+                    </tr>
+                    <tr>
+                        <td>Futera</td>
+                        <td>Museum</td>
+                        <td>MGC</td>
+                        <td>10</td>
+                        <td>4/10</td>
+                        <td>2022</td>
+                        <td>Purple</td>
+                        <td class="player">Ronaldinho</td>
+                    </tr>
+                    <tr>
+                        <td>Futera</td>
+                        <td>Museum</td>
+                        <td>MGC</td>
+                        <td>10</td>
+                        <td>4/10</td>
+                        <td>2022</td>
+                        <td>Purple</td>
+                        <td class="player">De Maria</td>
+                    </tr>
+                    <tr>
+                        <td>Futera</td>
+                        <td>Museum</td>
+                        <td>MGC</td>
+                        <td>10</td>
+                        <td>4/10</td>
+                        <td>2022</td>
+                        <td>Purple</td>
+                        <td class="player">Neymer Jr</td>
+                    </tr>
+                    <tr>
+                        <td>Futera</td>
+                        <td>Museum</td>
+                        <td>MGC</td>
+                        <td>10</td>
+                        <td>4/10</td>
+                        <td>2022</td>
+                        <td>Purple</td>
+                        <td class="player">Ronaldo</td>
+                    </tr>
+                    
                     <tr>
                         <td>Topps</td>
                         <td>Pearl</td>
@@ -88,7 +168,7 @@
                         <td>17/25</td>
                         <td>2020</td>
                         <td>Purple</td>
-                        <td>Frenkie De Jong</td>
+                        <td class="player">Mohammad Salah</td>
                     </tr>
                     <tr>
                         <td>Topps</td>
@@ -98,7 +178,7 @@
                         <td>9/10</td>
                         <td>2012</td>
                         <td>Purple</td>
-                        <td>Ronaldinho</td>
+                        <td class="player">De Maria</td>
                     </tr>
                     <tr>
                         <td>Panini</td>
@@ -108,7 +188,7 @@
                         <td>41/49</td>
                         <td>2018</td>
                         <td>Purple</td>
-                        <td>Mason Mount</td>
+                        <td class="player">Mohammad Salah</td>
                     </tr>
                     <tr>
                         <td>Futera</td>
@@ -118,7 +198,7 @@
                         <td>4/10</td>
                         <td>2022</td>
                         <td>Purple</td>
-                        <td>Kevin De Bruyne</td>
+                        <td class="player">Mohammad Salah</td>
                     </tr>
                     <tr>
                         <td>Topps</td>
@@ -128,7 +208,7 @@
                         <td>17/25</td>
                         <td>2020</td>
                         <td>Purple</td>
-                        <td>Frenkie De Jong</td>
+                        <td class="player">De Maria</td>
                     </tr>
                     
 
