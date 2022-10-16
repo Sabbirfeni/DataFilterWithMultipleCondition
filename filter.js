@@ -1,3 +1,27 @@
+// Connecting Xlsx file to html
+// ****************************
+
+// let table__body = document.querySelector(".table__body");
+// (
+//     async() => {
+//         let workbook = XLSX.read(await (await fetch("./Example-Data.xlsx")).arrayBuffer());
+        
+//             let html = XLSX.utils.sheet_to_html(workbook.Sheets.Sheet1);
+          
+//             table__body.innerHTML = `
+//             ${html}
+//             `;
+
+//             console.log(workbook)
+//     }
+// )()
+
+
+
+
+
+
+
 // Get unique values for the desired columns
 
 // {2 : ["M", "F"], 3 : ["RnD", "Engineering", "Design"], 4 : [], 5 : []}
@@ -244,3 +268,10 @@ allPlayer.forEach((valueName, index) => {
 })
 
 autocomplete(document.getElementById("myInput"), allPlayerName);
+
+
+
+
+
+
+
