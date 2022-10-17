@@ -54,17 +54,17 @@ h1 {
     outline: none;
 }
 
-.thead th {
+.thead_filter th {
     background-color: #133b5c;
     z-index: 4;
     position: static;
 }
 
-.thead th select {
+.thead_filter th select {
     padding: 8px;
 }
 
-.thead th select option {
+.thead_filter th select option {
     background-color: #133b5c;
     color: #fff;
 }

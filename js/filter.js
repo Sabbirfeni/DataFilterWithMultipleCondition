@@ -18,6 +18,15 @@
 
 
 
+// let rowsre = document.querySelectorAll("#emp-table > tbody > tr");
+
+// rowsre.forEach((value) => {
+//     console.log(value)
+// })
+
+
+
+
 
 
 
@@ -30,13 +39,13 @@ getUniqueValuesFromColumn();
 
 function getUniqueValuesFromColumn() { 
 
-    var unique_col_values_dict = {}
+    var unique_col_values_dict = {};
 
-    allFilters = document.querySelectorAll(".table-filter")
+    allFilters = document.querySelectorAll(".table-filter");
     allFilters.forEach((filter_i) => {
         col_index = filter_i.parentElement.getAttribute("col-index");
         // alert(col_index)
-        const rows = document.querySelectorAll("#emp-table > tbody > tr")
+        const rows = document.querySelectorAll("#emp-table > tbody > tr");
 
         rows.forEach((row) => {
             cell_value = row.querySelector("td:nth-child("+col_index+")").innerHTML;
@@ -70,16 +79,19 @@ function getUniqueValuesFromColumn() {
 
 };
 
+
+
+
 // Add <option> tags to the desired columns based on the unique values
 
 function updateSelectOptions(unique_col_values_dict) {
-    allFilters = document.querySelectorAll(".table-filter")
+    allFilters = document.querySelectorAll(".table-filter");
 
     allFilters.forEach((filter_i) => {
-        col_index = filter_i.parentElement.getAttribute('col-index')
+        col_index = filter_i.parentElement.getAttribute('col-index');
 
         unique_col_values_dict[col_index].forEach((i) => {
-            filter_i.innerHTML = filter_i.innerHTML + `\n<option value="${i}">${i}</option>`
+            filter_i.innerHTML = filter_i.innerHTML + `\n<option value="${i}">${i}</option>`;
         });
 
     });
@@ -92,14 +104,14 @@ function updateSelectOptions(unique_col_values_dict) {
 // filter_value_dict {2 : Value selected, 4:value, 5: value}
 
 function filter_rows() {
-    allFilters = document.querySelectorAll(".table-filter")
+    allFilters = document.querySelectorAll(".table-filter");
     
-    var filter_value_dict = {}
+    var filter_value_dict = {};
 
     allFilters.forEach((filter_i) => {
-        col_index = filter_i.parentElement.getAttribute('col-index')
+        col_index = filter_i.parentElement.getAttribute('col-index');
 
-        value = filter_i.value
+        value = filter_i.value;
         if (value != "all") {
             filter_value_dict[col_index] = value;
         }
@@ -112,13 +124,13 @@ function filter_rows() {
         var display_row = true;
 
         allFilters.forEach((filter_i) => {
-            col_index = filter_i.parentElement.getAttribute('col-index')
-            col_cell_value_dict[col_index] = row.querySelector("td:nth-child(" + col_index+ ")").innerHTML
+            col_index = filter_i.parentElement.getAttribute('col-index');
+            col_cell_value_dict[col_index] = row.querySelector("td:nth-child(" + col_index+ ")").innerHTML;
         })
 
         for (var col_i in filter_value_dict) {
-            filter_value = filter_value_dict[col_i]
-            row_cell_value = col_cell_value_dict[col_i]
+            filter_value = filter_value_dict[col_i];
+            row_cell_value = col_cell_value_dict[col_i];
             
             if (row_cell_value.indexOf(filter_value) == -1 && filter_value != "all") {
                 display_row = false;
@@ -129,10 +141,10 @@ function filter_rows() {
         }
 
         if (display_row == true) {
-            row.style.display = "table-row"
+            row.style.display = "table-row";
 
         } else {
-            row.style.display = "none"
+            row.style.display = "none";
 
         }
 
@@ -162,7 +174,7 @@ function autocomplete(inp, arr) {
 
 
         closeAllLists();
-        if (!val) { return false;}
+        if (!val) { return false;};
         currentFocus = -1;
         
         a = document.createElement("DIV");
