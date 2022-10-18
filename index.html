@@ -138,8 +138,8 @@
     <!--Footer-->
   </body>
 
-  <!-- Filter functionalities js link -->
-  <script src="js/filter.js"></script>
+
+
   <!-- MDB ESSENTIAL -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Google API -->
@@ -147,51 +147,7 @@
   <!-- easyData -->
   <script type="text/javascript" src="js/easyData-google-sheets.js"></script>
 
-  <!-- easyData - Creating table -->
-  <script>
-    {
-      {
-        // Your API KEY
-        const API_KEY = "AIzaSyCa5GgOTng3c0t_CHT_XOASd3JFJN0UGfc";
-
-        function displayResult2(response) {
-          let tableHead = "";
-          let tableBody = "";
-
-          response.result.values.forEach((row, index) => {
-            if (index === 0) {
-              tableHead += "<tr>";
-              row.forEach((val) => (tableHead += "<th>" + val + "</th>"));
-              tableHead += "</tr>";
-            } else {
-              tableBody += "<tr>";
-              row.forEach((val) => (tableBody += "<td>" + val + "</td>"));
-              tableBody += "</tr>";
-            }
-          });
-
-          document.getElementById("table-head").innerHTML = tableHead;
-          document.getElementById("table-body").innerHTML = tableBody;
-       
-        }
-
-        function loadData() {
-          // Spreadsheet ID
-          const spreadsheetId = "1dvnKX-6-XhU8tnkmlqp8kKS-KZlW_r9hNgPuM9kG8ek";
-          const range = "A:Z";
-          getPublicValues({ spreadsheetId, range }, displayResult2);
-        }
-
-        window.addEventListener("load", (e) => {
-          initOAuthClient({ apiKey: API_KEY });
-        });
-
-        document.addEventListener("gapi-loaded", (e) => {
-          loadData();
-        });
-      }
-    }
-  </script>
-
+  <!-- Filter functionalities js link -->
+  <script src="js/filter.js"></script>
 
 </html>
