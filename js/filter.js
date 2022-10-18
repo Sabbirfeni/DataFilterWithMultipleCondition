@@ -6,7 +6,7 @@
   {
     {
       // Your API KEY
-      const API_KEY = "AIzaSyCa5GgOTng3c0t_CHT_XOASd3JFJN0UGfc";
+      const API_KEY = "";
 
       function displayResult2(response) {
         let tableHead = "";
@@ -26,7 +26,22 @@
 
         document.getElementById("table-head").innerHTML = tableHead;
         document.getElementById("table-body").innerHTML = tableBody;
+     
 
+        const allTableData = document.querySelectorAll("#emp-table > tbody > tr > td")
+
+        allTableData.forEach((singleTableData) => {
+          singleTableData.setAttribute('id', 'table_data');
+        })
+
+
+        const allTableRow = document.querySelectorAll("#emp-table > tbody > tr > td:nth-last-child(odd)");
+        const lastChild = document.querySelectorAll("#emp-table > tbody > tr > td:nth-last-child");
+        allTableRow.forEach((value, index, arr) => {
+
+          console.log(lastChild)
+          
+        })
 
 
 
@@ -34,7 +49,6 @@
 // Get unique values for the desired columns
 // {2 : ["M", "F"], 3 : ["RnD", "Engineering", "Design"], 4 : [], 5 : []}
 // ----------------------------------------------------------------------
-
 getUniqueValuesFromColumn();
 
 function getUniqueValuesFromColumn() { 
