@@ -237,7 +237,6 @@ function getUniqueValuesFromColumn() {
 
 
 
-
 // Add <option> tags to the desired columns based on the unique values
 // -------------------------------------------------------------------
   function updateSelectOptions(unique_col_values_dict) {
