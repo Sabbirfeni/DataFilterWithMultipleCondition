@@ -47,8 +47,8 @@ h1 {
 .table-filter {
     width: 100%;
     border-radius: 4px;
-    border: 0.5px solid rgb(212, 212, 212);
     outline: none;
+    border: none;
     transition: 0.3s;
 }
 
@@ -57,18 +57,13 @@ h1 {
 }
 
 .thead_filter th {
-    background-color: #bce1ff33;
+    background-color: #ebebeb;
     z-index: 4;
     position: static;
 }
 
 .thead_filter th select {
     padding: 12px;
-}
-
-.thead_filter th select option {
-    background-color: #133b5c;
-    color: #fff;
 }
 
 #sjs-A1, #sjs-B1, #sjs-C1, #sjs-D1, #sjs-E1, #sjs-F1, #sjs-G1, #sjs-H1 {

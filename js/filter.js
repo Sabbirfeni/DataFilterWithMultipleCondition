@@ -247,7 +247,11 @@ function getUniqueValuesFromColumn() {
             col_index = filter_i.parentElement.getAttribute('col-index');
 
             unique_col_values_dict[col_index].forEach((i) => {
+
+              if(i !== '') {
                 filter_i.innerHTML = filter_i.innerHTML + `\n<option value="${i}">${i}</option>`;
+              }
+
             });
 
         });
