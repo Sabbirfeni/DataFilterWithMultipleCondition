@@ -259,6 +259,7 @@ function getUniqueValuesFromColumn() {
         
     }
 
+    // Loading data from google sheets
       function loadData() {
         // Spreadsheet ID
         const spreadsheetId = "1dvnKX-6-XhU8tnkmlqp8kKS-KZlW_r9hNgPuM9kG8ek";
