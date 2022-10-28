@@ -36,14 +36,19 @@ h1 {
 }
 .table-wrapper {
     flex: 1;
+    width: 100%;
     overflow-y: auto;
     height: fit-content;
     max-height: 80vh;
-    
     margin-top: 22px;
-    margin: 15px;
 }
 
+#emp-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .table-filter {
     width: 100%;
     border-radius: 4px;
@@ -55,11 +60,17 @@ h1 {
 .table-filter:hover {
     background-color: #f0f0f0;
 }
-
+.thead_filter {
+    flex: 1;
+    width: 100%;
+}
 .thead_filter th {
     background-color: #ebebeb;
     z-index: 4;
     position: static;
+    padding: 20px 15px;
+    flex: 1;
+    width: 600px;
 }
 
 .thead_filter th select {
@@ -79,22 +90,33 @@ h1 {
 
 .table-head {
     border-bottom: 0.5px solid #e7e7e7;
+    flex: 1;
+    width: 100%;
 }
 .table-head th {
+    padding: 20px;
     font-size: 15px;
-}
-table th {
-    padding: 20px 15px;
-    width: 300px;
+    flex: 1;
+    width: 350px;
 }
 
-.table__body td {
+.table__body {
+    flex: 1;
+    width: 100%;
+}
+.table__body tr td {
+    flex: 1;
+    width: 350px;
     text-align: left; 
     font-size: 15px;
     border-bottom: 0.5px solid #e7e7e7;
-    padding: 20px 15px;
+    padding: 20px;
 }
 
+.blank__thead {
+    flex: 1;
+    width: 100%;
+}
 .blank__thead th {
     background-color: #00000000;
     border: none;
